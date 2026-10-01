@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pizzarendelés</h2>
+
+<form action="rendeles.php" method="post">
+
+  <fieldset>
+    <legend>Kapcsolat</legend>
+    <p>
+      <label for="nev">Név *</label><br>
+      <input type="text" id="nev" name="nev" required>
+    </p>
+    <p>
+      <label for="tel">Telefon *</label><br>
+      <input type="tel" id="tel" name="telefon"
+             placeholder="+36 30 123 4567" required>
+    </p>
+    <p>
+      <label for="tor">Törzsvásárlói pontok: <br> 0p</label><br>
+        
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>A pizza</legend>
+    <p>
+      <label for="fajta">Fajta *</label>
+      <select id="fajta" name="fajta" required>
+        <option value="">-- válassz --</option>
+        <option value="margherita">Margherita</option>
+        <option value="sonkas">Sonkás</option>
+        <option value="T">Big T</option>
+        <option value="negysajtos">Vegetáriánus</option>
+        <option value="negysajtos">Funky</option>
+        <option value="negysajtos">Kawaii</option>
+        <option value="negysajtos">Pay Gorn</option>
+        <option value="negysajtos">Nimrodos</option>
+        <option value="negysajtos">Pre T</option>
+        <option value="negysajtos">Tiki_tiki</option>
+        <option value="negysajtos">Sam Smith</option>
+        <option value="negysajtos">John Fortnite Kennedy</option>
+  
+      </select>
+    </p>
+
+    <p><strong>Méret:</strong></p>
+    <p>
+      <input type="radio" id="m1" name="meret"
+             value="26" checked>
+      <label for="m1">26 cm</label>
+      <input type="radio" id="m2" name="meret"
+             value="32">
+      <label for="m2">32 cm</label>
+            <input type="radio" id="m2" name="meret"
+             value="32">
+      <label for="m2">67 cm</label>
+    </p>
+
+    <p><strong>Extra feltét:</strong></p>
+    <p>
+      <input type="checkbox" id="f1" name="extra"
+             value="sajt">
+      <label for="f1">Extra sajt</label>
+      <input type="checkbox" id="f2" name="extra"
+             value="gomba">
+      <label for="f2">Gomba</label>
+      <input type="checkbox" id="f2" name="extra"
+             value="Turo">
+      <label for="f2">Túró</label>
+      <input type="checkbox" id="f2" name="extra"
+             value="tung">
+      <label for="f2">Tung Tung Tung gombák</label>
+      <input type="checkbox" id="f2" name="extra"
+             value="Kurucz">
+      <label for="f2">Kurucz titkos szósza</label>
+    </p>
+
+    <p>
+      <label for="db">Darab *</label>
+      <input type="number" id="db" name="darab"
+             value="1" min="1" max="10" required>
+    </p>
+  </fieldset>
+
+  <p>
+    <label for="megj">Megjegyzés</label><br>
+    <textarea id="megj" name="megjegyzes"
+              rows="3" cols="34"></textarea>
+  </p>
+
+  <p>
+    <input type="checkbox" id="aszf" name="aszf"
+           value="elfogadva" required>
+    <label for="aszf">Elfogadom a feltételeket *</label>
+  </p>
+
+  <button type="submit">Rendelés elküldése</button>
+</form>
+</body>
+</html>
